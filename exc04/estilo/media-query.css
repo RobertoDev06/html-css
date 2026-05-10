@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width:1100px) {
+
+    main{
+        min-height: 75vh;    
+    }
+    .imagem-formulario{
+        width: 0%;
+    }
+
+    #formulario{
+        width: 100%;
+        margin: auto;
+    }
+
+    
+}
+
+@media screen and (min-width: 300px) and (max-width:768px) {
+
+    main{
+        min-height: 75vh;  
+    }
+
+    .imagem-formulario{
+        display: none;
+    }
+
+    #formulario{
+        width: 100%;
+        margin: auto;
+    }
+
+    #corpo-form{
+        grid-template-columns: 1fr;
+        gap: 15px; 
+        margin: 15px; 
+    }
+
+    #direita, #esquerda{
+        margin: 0;
+        padding: 0;
+    }
+
+    .fundo{
+        margin-top: 10px; 
+    }
+
+    .esconde, #email, #senha, #telefone, #senha2{
+        display: none;
+    }
+
+    .genero label{
+        display: block;       
+        margin-bottom: 8px;
+    }
+
+    .genero{
+        margin: 15px 20px;
+    }
+
+    input, label{
+        font-size: 1.15rem;
+    }
+
+}

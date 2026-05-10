@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+@media (max-width: 767px) and (min-width: 480px) {
+
+  #cabecalho-principal {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  #cabecalho-principal div h1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  #cabecalho-principal img {
+    display: none;
+  }
+
+  .menu-navegacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-navegacao a {
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0;
+    padding: 8px 12px;
+    transition: 0.4s;
+  }
+
+  .menu-navegacao a:hover {
+    background-color: var(--cor04);
+    border-radius: 5px;
+    padding: 8px 12px;
+  }
+
+  .secao-destaque {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .secao-destaque div h1 {
+    font-size: 2.7rem;
+  }
+
+  .secao-destaque div p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  .galeria-imagens img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .secao-sobre h2,
+  .secao-missao h2,
+  .secao-produtos h2,
+  .secao-texto h2 {
+    font-size: 2rem;
+  }
+
+  .secao-sobre p,
+  .secao-missao p,
+  .secao-produtos p,
+  .secao-diferencial p,
+  .secao-texto p {
+    font-size: 1.2rem;
+  }
+
+  .card-cardapio-extra img {
+    width: 210px;
+    height: 210px;
+  }
+
+  tr,
+  td {
+    text-align: left;
+  }
+
+  iframe {
+    width: 85%;
+    height: 450px;
+  }
+
+  #rodape-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  #cabecalho-principal {
+    padding: 0;
+  }
+
+  #cabecalho-principal div h1 {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+
+  .menu-navegacao a {
+    font-size: 1rem;
+  }
+
+  .menu-navegacao a:hover {
+    background-color: var(--cor04);
+    padding: 7px;
+  }
+
+  .secao-destaque {
+    margin-left: 0;
+  }
+
+  .secao-destaque div h1 {
+    font-size: 2.7rem;
+  }
+
+  .secao-destaque div p {
+    font-size: 1.1rem;
+  }
+
+  .galeria-imagens img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .secao-sobre h2,
+  .secao-missao h2,
+  .secao-produtos p,
+  .secao-texto p {
+    font-size: 2.3em;
+  }
+
+  .secao-sobre p,
+  .secao-missao p,
+  .secao-produtos p,
+  .secao-texto p {
+    font-size: 1.2rem;
+  }
+
+  #banner-padaria {
+    width: 80%;
+  }
+
+  tr,
+  td {
+    text-align: left;
+  }
+
+  iframe {
+    width: 90%;
+    height: 500px;
+  }
+
+  #rodape-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

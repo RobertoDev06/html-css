@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500&family=Playfair+Display:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor0:  #fff;
+    --cor01: #fde4bc;
+    --cor02: #d3ab80;
+    --cor03: #96786f;
+    --cor04: #472825;
+    --cor05: #2e1a18;
+
+    --cor-neutra-0: #0e0c0c;
+    --cor-neutra-10: #171717;
+    --cor-neutra-30: #a8a29e;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff8f0;
+    color: #4a3f35;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--cor05);
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--cor05);
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--cor05);
+    letter-spacing: 1px;
+}
+
+/* HEADER */
+#cabecalho-principal {
+    height: 130px;
+    background-image: linear-gradient(120deg, var(--cor02) 70%, var(--cor01));
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#cabecalho-principal div {
+    display: flex;
+    align-items: center;
+}
+
+#logo-pequeno {
+    width: 160px;
+    height: 190px;
+    margin-top: 18px;
+}
+
+#cabecalho-principal div h1 {
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu-navegacao {
+    display: flex;
+    align-items: flex-end;
+}
+
+.menu-navegacao a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: var(--cor0);
+    margin: 0 18px 8px 0;
+    transition: 0.6s ease;
+}
+
+.menu-navegacao a:hover {
+    background-color: var(--cor02);
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* HERO */
+.secao-destaque {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    padding: 25px 25px 0 25px;
+}
+
+#logo-grande {
+    margin-top: 12px;
+    margin-left: 8px;
+    width: 200px;
+    height: 200px;
+}
+
+.secao-destaque div h1 {
+    font-size: 3.2rem;
+    padding-left: 25px;
+}
+
+.secao-destaque p {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+/* BIOGRAFIA */
+.secao-biografia {
+    max-width: 850px;
+    margin: 60px auto;
+    padding: 0 25px;
+}
+
+.secao-biografia h2 {
+    font-size: 2.3rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.secao-biografia h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--cor02);
+    margin: 10px auto 0;
+}
+
+.secao-biografia p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+/* MAPA */
+iframe {
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    display: block;
+    margin: 80px auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    border: none;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: var(--cor-neutra-10);
+    color: var(--cor-neutra-30);
+    text-align: center;
+    padding: 20px;
+}
+
+.lista-rodape {
+    list-style: none;
+}
+
+.lista-rodape h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.item-contato {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 3px 0;
+}

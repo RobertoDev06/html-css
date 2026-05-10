@@ -1,0 +1,205 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor01: #1E1E1E; /* Fundo   */
+    --cor02: #BDBDBD; /* Textos */
+    --cor03: #00BDEA;
+    --cor04: #0003A9;/* hover dos links da barra lateral  */
+    --cor05: #C9A227; /* Botões nos preços dos cortes */
+    --barra-lateral: #2A2A2A;
+
+
+    --fonte-padrao: ;
+    --fonte-destaque: ;
+}
+
+body{
+    display: flex;
+    background-color: var(--cor01);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+.barra-lateral{
+    background-color: var(--barra-lateral);
+    border-right: 1.5px solid var(--cor02);
+    min-height: 100vh;
+    min-width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barra-lateral span{
+    color: var(--cor03);
+}
+
+.barra-lateral h1{
+    color: var(--cor02);
+    font-size: 1.6rem;
+    margin: 25px 0 35px 0;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #fff;
+}
+
+.lista-lateral{
+    list-style: none;
+}
+
+.lista-lateral li{
+    margin: 35px 0;
+}
+
+.lista-lateral li a{
+    color: var(--cor02);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.lista-lateral li a:hover{
+    background-color: var(--cor04);
+    border-radius: 3px;
+    padding: 7px;
+}
+
+.cabecalho{
+    min-height: 130px;
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+main h1{
+    color: var(--cor02);
+    font-size: 2.6rem;
+    padding-bottom: 6px;
+    display: inline-block;
+    position: relative;
+    margin: 20px 0 50px 15px;
+}
+
+main h1::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 20%;
+    height: 3px;
+    background-color: var(--cor05);
+
+    transition: width 2s;
+}
+
+main h1:hover::after{
+    width: 80%;
+    box-shadow: 0 0 8px var(--cor05);
+}
+
+
+.formulario{
+    background-color: #fff;
+
+    width: 1100px;
+    min-height: 80vh;
+
+    padding: 25px;
+    margin: auto;
+
+    /* Display */
+    display: flex;
+    flex-direction: column;
+
+    border-radius: 10px;
+    box-shadow:
+    0 0 10px rgba(0,0,0,0.3),
+    1px 1px 12px rgba(0, 189, 234, 0.25);
+}
+
+label{
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+}
+
+input{
+    font-size: 1rem;
+    margin-bottom: 25px;
+    padding: 12px;
+    border: none;
+    box-shadow: 0 0 8px var(--cor02);
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid var(--cor01);
+    transition: .4s;
+}
+
+
+#dados-contato{
+    display: flex;
+    gap: 30px;
+}
+
+#dados-contato p{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.origem-cliente{
+    margin-top: 10px;
+}
+
+.origem-cliente p{
+    font-size: 1.5rem;
+}
+
+.origem-cliente .lista{
+    color: var(--cor01);
+    margin: 6px 0 0 12px;
+    display: flex;
+    gap: 20px;
+}
+
+.origem-cliente .lista label{
+    font-size: 1.3rem;
+}
+
+.btn-cor{
+    background-color: var(--cor05);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    transform: .4s;
+    margin-right: 10px;
+}
+
+.btn-cor:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    opacity: 0.9;
+}
+
+#cancelar{
+    background-color: #2A2A2A;
+}
+
+
+
+
+

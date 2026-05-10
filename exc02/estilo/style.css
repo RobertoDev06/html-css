@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor01: #ffffff; /* Texto principal */
+    --cor02: #ebc894; /* Detalhes suaves */
+    --cor03: #e0b342; /* Sombras e botões */
+    --cor04: #1e3a5f; /* Azul mais claro */
+    --cor05: #0f1e34; /* Fundo */
+}
+
+body {
+    background-image: linear-gradient(160deg, var(--cor04), var(--cor05));
+    color: white;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho, #container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.cabecalho {
+    font-weight: 600;
+    height: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho h1 {
+    font-size: 27px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+#navegacao a {
+    padding-left: 15px;
+    color: var(--cor01);
+    font-size: 19px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.4s ease;
+}
+
+#navegacao a:hover {
+    color: var(--cor02);
+    transform: scale(1.1);
+}
+
+#container {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#biografia {
+    flex: 1;
+    margin-right: 50px;
+}
+
+#biografia h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0 0 3px var(--cor02);
+}
+
+#biografia h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+#biografia p {
+    font-size: 17px;
+    font-weight: 300;
+    margin: 15px 0 25px 0;
+}
+
+#contatos ul {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin: 20px 0 35px 0;
+}
+
+.link_rodape {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.link_rodape:hover {
+    transform: scale(1.1);
+}
+
+#instagram { background: linear-gradient(#7f37c9, #ff2992, #ff9807); }
+#facebook { background-color: #4267b3; }
+#whatsapp { background-color: #25d366; }
+#linkedin { background-color: #0a66c2; }
+#github { background-color: #333; }
+
+button {
+    background-color: var(--cor03);
+    color: var(--cor05);
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 8px var(--cor03);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e7c502;
+    transform: scale(1.05);
+}
+
+aside img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.4s ease-in-out;
+}
+
+aside img:hover {
+    box-shadow: 2px 2px 20px var(--cor03);
+}

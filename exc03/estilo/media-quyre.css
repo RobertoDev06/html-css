@@ -1,0 +1,94 @@
+@media (max-width: 1200px) {
+
+    #container {
+        padding: 0 30px;
+    }
+
+    .capa_texto h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .cadastro-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px;
+    }
+
+    .form-cadastro {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .btn-cadastro {
+        grid-column: span 1;
+    }
+
+    .capa {
+        height: 500px;
+        padding: 0 5%;
+    }
+
+    .capa_texto h2 {
+        font-size: 2.4rem;
+    }
+
+    .container_nav {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container_nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lado-esquerdo,
+    .lado-direito {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .lista_nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .capa {
+        height: 420px;
+        text-align: center;
+        justify-content: center;
+        padding: 0 20px;
+    }
+
+    .capa_texto h2 {
+        font-size: 1.8rem;
+    }
+
+    .grid-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .capa_texto h2 {
+        font-size: 1rem;
+    }
+
+    .cadastro-container {
+        padding: 25px;
+    }
+
+    iframe {
+        height: 300px;
+    }
+}

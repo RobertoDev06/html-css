@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCar - Encontre seu ideal</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-quyre.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="container_nav">
+        <div class="lado-esquerdo">
+            <h1 class="logo">Auto<span>Car</span></h1>
+            <ul class="lista_nav">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Estoque</a></li>
+            </ul>
+        </div>
+        <div id="acoes" class="lado-direito">
+            <span class="telefone">(11) 98765-4321</span>
+            <button class="btn-contato">Fale Conosco</button>
+        </div>
+    </header>
+
+    <section class="capa">
+        <div class="capa_texto">
+            <button class="badge_oferta">OFERTAS DA SEMANA</button>
+            <h2>ENCONTRE SEU CARRO IDEAL</h2>
+            <p>Ofertas imperdíveis nos melhores carros do mercado.</p>
+            <button class="btn_principal">VER OFERTAS</button>
+        </div>
+    </section>
+
+    <main id="container">
+        <article id="biografia">
+            <h2>Sobre a AutoCar</h2>
+            <p>
+                A <strong>Autocar</strong> é uma concessionária renomada, especializada em 
+                oferecer <strong>carros de alta qualidade</strong> e um atendimento 
+                <strong>personalizado</strong> aos seus clientes. Fundada há mais de 10 anos, 
+                a Autocar se destaca pelo compromisso com a <strong>satisfação do cliente</strong> 
+                e pela variedade de modelos e marcas disponíveis.
+            </p>
+        </article>
+
+        <section class="formulario">
+            <h2>Pesquisa sobre o Carro</h2>
+            <form id="modelos">
+                <div class="campos-form">
+                    <input type="text" placeholder="Marca">
+                    <input type="text" placeholder="Modelo">
+                    <input type="number" placeholder="Preço Máximo">
+                    <input type="number" placeholder="Ano">
+                    <select>
+                        <option value="">Categoria</option>
+                        <option value="1">Sedan</option>
+                        <option value="2">SUV</option>
+                    </select>
+                    <input type="date">
+                    <button type="submit">BUSCAR AGORA</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="lista_carros">
+            <h2 class="titulo-secao">Destaques em Estoque</h2>
+            <div class="grid-cards">
+                <article class="card">
+                    <img src="imagens/bmw.png" alt="BMW X5">
+                    <div class="card-info">
+                        <h3>BMW X5 2022</h3>
+                        <p class="preco">R$ 250.000</p>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="imagens/civic.png" alt="Honda Civic">
+                    <div class="card-info">
+                        <h3>Honda Civic 2021</h3>
+                        <p class="preco">R$ 120.000</p>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="imagens/corolla.png" alt="Toyota Corolla">
+                    <div class="card-info">
+                        <h3>Toyota Corolla 2020</h3>
+                        <p class="preco">R$ 100.000</p>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="imagens/audi.png" alt="Audi A3">
+                    <div class="card-info">
+                        <h3>Audi A3 2019</h3>
+                        <p class="preco">R$ 95.000</p>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="imagens/jeep.png" alt="Jeep Compass">
+                    <div class="card-info">
+                        <h3>Jeep Compass 2023</h3>
+                        <p class="preco">R$ 185.000</p>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="imagens/golf.png" alt="VW Golf GTI">
+                    <div class="card-info">
+                        <h3>VW Golf GTI 2020</h3>
+                        <p class="preco">R$ 195.000</p>
+                        <button>Ver Detalhes</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="cadastro-secao">
+            <div class="cadastro-container">
+                <div class="cadastro-chamada">
+                    <h2>Cadastre-se na <span>Nossa Loja</span></h2>
+                    <p>Receba ofertas exclusivas no seu e-mail.</p>
+                </div>
+                <form class="form-cadastro">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="text" placeholder="CPF" required>
+                    <input type="text" placeholder="CEP" required>
+                    <input type="tel" placeholder="(xx) xxxx-xxxx" required>
+                    <button type="submit" class="btn-cadastro">Finalizar Cadastro</button>
+                </form>
+            </div>
+        </section>
+
+        <div class="endereco">
+            <h2>Nossa Localização</h2>
+            <p>Estamos na <strong>Av. Pontes Vieira, 1500</strong>. Venha tomar um café conosco!</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.34734490815!2d-38.5100!3d-3.7500!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwNDUnMDAuMCJTIDM4wrAzMCcwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1700000000000" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container_footer">
+            <div class="footer-box">
+                <h3>Horários</h3>
+                <ul>
+                    <li><strong>Seg - Sex:</strong> 08:00 às 18:00</li>
+                    <li><strong>Sábados:</strong> 08:00 às 12:00</li>
+                </ul>
+                <div id="redes_sociais">
+                    <a href="#" class="link_rodape" id="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="link_rodape" id="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="link_rodape" id="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Serviços</h3>
+                <ul class="meios_contatos">
+                    <li><a href="#">Venda de Motos</a></li>
+                    <li><a href="#">Peças Originais</a></li>
+                    <li><a href="#">Oficina Especializada</a></li>
+                    <li><a href="#">Financiamento</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Newsletter</h3>
+                <p>Receba novidades e promoções.</p>
+                <div id="grupo_input">
+                    <input type="email" placeholder="Seu e-mail">
+                    <button><i class="fa-regular fa-envelope"></i></button>
+                </div>
+            </div>
+        </div>
+        <div id="direitos_autorais">
+            © 2026 AutoCar - Todos os direitos reservados.
+        </div>
+    </footer>
+</body>
+</html>

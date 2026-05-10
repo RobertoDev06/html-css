@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Para Cadastro</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+</head>
+<body>
+
+<section id="redes_sociais">
+    <a href="https://web.whatsapp.com/">zap</a>
+    <a href="https://github.com/RobertoDev06"><img src="imagem/logo-github.jpg" alt="github"></a>
+    <a href="https://www.instagram.com/_paul06.r/"><img src="imagem/logo-instagram.jpg" alt="instagram"></a>
+    <a href="https://www.linkedin.com/in/paulo-roberto-5856a43aa/">Linkeed</a>
+</section>
+
+<main>
+    
+    <!-- LADO IMAGEM (corrigido) -->
+    <div class="imagem-formulario"></div>
+
+    <form id="formulario">
+
+        <div id="topo-form">
+            <h2>Cadastre-se</h2>
+            <button type="button">Entrar</button>
+        </div>
+
+        <!-- corrigido: separacao -->
+        <div class="separacao">
+
+            <div id="corpo-form">
+
+                <div id="esquerda">
+                    <div>
+                        <label for="nome">Primeiro Nome</label>
+                        <input type="text" id="nome" placeholder="Digite seu primeiro nome" required>
+                    </div>
+
+                    <div class="fundo" class="esconde">
+                        <label for="email" class="esconde">E-mail</label>
+                        <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <div class="fundo">
+                        <label for="senha" class="esconde">Senha</label>
+                        <input type="password" id="senha" placeholder="Digite sua senha" required>
+                    </div>
+                </div>
+
+                <div id="direita">
+                    <div>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" id="sobrenome" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="fundo">
+                        <label for="telefone" class="esconde">Celular</label>
+                        <input type="tel" id="telefone" placeholder="(xx) xxxx-xxxx" required>
+                    </div>
+
+                    <div class="fundo">
+                        <label for="senha2" class="esconde">Confirme sua Senha</label>
+                        <input type="password" id="senha2" placeholder="Digite sua senha novamente" required>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- GÊNERO (igual da imagem) -->
+            <div class="genero">
+                <p>Gênero</p>
+
+                <label><input type="radio" name="genero"> Feminino</label>
+                <label><input type="radio" name="genero"> Masculino</label>
+                <label><input type="radio" name="genero"> Outros</label>
+                <label><input type="radio" name="genero"> Prefiro não dizer</label>
+            </div>
+
+        </div>
+
+        <button type="submit" class="botao-final">Continuar</button>
+
+    </form>
+</main>
+
+</body>
+</html>
