@@ -1,79 +1,158 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --cor01: #1E1E1E; /* Fundo   */
-    --cor02: #BDBDBD; /* Textos */
+:root {
+    --cor01: #1E1E1E;
+    --cor02: #BDBDBD;
     --cor03: #00BDEA;
-    --cor04: #0003A9;/* hover dos links da barra lateral  */
-    --cor05: #C9A227; /* Botões nos preços dos cortes */
+    --cor04: #0003A9;
+    --cor05: #C9A227;
     --barra-lateral: #2A2A2A;
-
-
-    --fonte-padrao: ;
-    --fonte-destaque: ;
 }
 
-body{
+body {
     display: flex;
     background-color: var(--cor01);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.barra-lateral{
+.barra-lateral {
     background-color: var(--barra-lateral);
-    border-right: 1.5px solid var(--cor02);
+    border-right: 1.5px solid rgba(189, 189, 189, 0.2);
     min-height: 100vh;
-    min-width: 190px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+}
 
+.barra-lateral h1 {
+    color: var(--cor02);
+    font-size: 1.4rem;
+    margin: 25px 0 35px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--cor05);
+    text-align: center;
+}
+
+.barra-lateral span {
+    color: var(--cor03);
+}
+
+.lista-lateral {
+    list-style: none;
+    width: 100%;
+}
+
+.lista-lateral li {
+    margin: 20px 0;
+}
+
+.lista-lateral li a {
+    color: var(--cor02);
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lista-lateral li a:hover {
+    background-color: var(--cor04);
+    color: #fff;
+    padding-left: 15px;
+}
+
+main {
+    flex: 1;
+    margin-left: 250px;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.barra-lateral span{
-    color: var(--cor03);
+main h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.barra-lateral h1{
+main > p {
     color: var(--cor02);
-    font-size: 1.6rem;
-    margin: 25px 0 35px 0;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
 }
 
-.lista-lateral{
-    list-style: none;
+#img-cortes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
 }
 
-.lista-lateral li{
-    margin: 35px 0;
+#img-cortes div {
+    background-color: var(--barra-lateral);
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: 0.4s;
 }
 
-.lista-lateral li a{
+#img-cortes div:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    border-color: var(--cor05);
+}
+
+#img-cortes img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: 0.6s ease;
+}
+
+#img-cortes div:hover img {
+    transform: scale(1.15);
+}
+
+#img-cortes h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 20px 20px 10px 20px;
+    text-align: left;
+}
+
+#img-cortes div p {
     color: var(--cor02);
-    text-decoration: none;
-    transition: 0.5s;
+    font-size: 0.95rem;
+    margin: 0 20px 5px 20px;
+    text-align: left;
 }
 
-.lista-lateral li a:hover{
-    background-color: var(--cor04);
-    border-radius: 3px;
-    padding: 7px;
+#img-cortes button {
+    align-self: flex-end;
+    background-color: var(--cor05);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 15px 20px 20px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-
-section{
+#img-cortes button:hover {
     background-color: #fff;
-
-}
-
-div{
-    background-color: #00BDEA;
-    margin: 20px;
+    box-shadow: 0 0 15px var(--cor05);
 }

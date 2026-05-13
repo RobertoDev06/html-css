@@ -1,154 +1,208 @@
 @charset "UTF-8";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --cor01: #1E1E1E; /* Fundo   */
-    --cor02: #BDBDBD; /* Textos */
+:root {
+    --cor01: #1E1E1E;
+    --cor02: #BDBDBD;
     --cor03: #00BDEA;
-    --cor04: #0003A9;/* hover dos links da barra lateral  */
-    --cor05: #C9A227; /* Botões nos preços dos cortes */
+    --cor04: #0003A9;
+    --cor05: #C9A227;
     --barra-lateral: #2A2A2A;
-
-
-    --fonte-padrao: ;
-    --fonte-destaque: ;
 }
 
-body{
+body {
     display: flex;
     background-color: var(--cor01);
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--cor02);
 }
 
-.barra-lateral{
+/* --- BARRA LATERAL --- */
+.barra-lateral {
     background-color: var(--barra-lateral);
-    border-right: 1.5px solid var(--cor02);
+    border-right: 1.5px solid rgba(189, 189, 189, 0.2);
     min-height: 100vh;
-    min-width: 190px;
-
+    width: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    position: fixed; /* Fixa a barra para não sumir no scroll */
 }
 
-.barra-lateral span{
+.barra-lateral h1 {
+    color: var(--cor02);
+    font-size: 1.4rem;
+    margin: 25px 0 35px 0;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--cor05);
+    text-align: center;
+}
+
+.barra-lateral span {
     color: var(--cor03);
 }
 
-.barra-lateral h1{
-    color: var(--cor02);
-    font-size: 1.6rem;
-    margin: 25px 0 35px 0;
-    padding-bottom: 8px;
-    border-bottom: 1px solid #fff;
-}
-
-.lista-lateral{
+.lista-lateral {
     list-style: none;
+    width: 100%;
 }
 
-.lista-lateral li{
-    margin: 35px 0;
+.lista-lateral li {
+    margin: 20px 0;
 }
 
-.lista-lateral li a{
+.lista-lateral li a {
     color: var(--cor02);
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-.lista-lateral li a:hover{
+.lista-lateral li a:hover {
     background-color: var(--cor04);
-    border-radius: 3px;
-    padding: 7px;
+    color: #fff;
+    padding-left: 15px;
 }
 
-.cabecalho{
-    min-height: 130px;
-    color: #fff;
+/* CONTEÚDO PRINCIPAL */
+main {
+    flex: 1;
+    margin-left: 220px;
+    padding: 40px;
+}
 
+/* CABEÇALHO COM ANIMAÇÃO DOURADA */
+.cabecalho {
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.cabecalho h1 {
+    color: #fff;
+    font-size: 3.5rem;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 10px;
+    cursor: default;
+}
+
+.cabecalho h1 span {
+    color: var(--cor03);
+}
+
+.cabecalho h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 5px;
+    background-color: var(--cor05);
+    transition: width 0.5s ease-in-out;
+}
+
+.cabecalho h1:hover::after {
+    width: 100%;
+}
+
+.cabecalho p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: var(--cor02);
+}
+
+/* BIOGRAFIA */
+.biografia {
+    max-width: 900px;
+    margin-bottom: 80px;
+}
+
+.biografia h2 {
+    font-size: 2rem;
+    color: var(--cor05);
+    margin-bottom: 15px;
+}
+
+.biografia p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* GRID DE CORTES (CARDS) */
+.imagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+.card-corte {
+    background-color: var(--barra-lateral);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card-corte:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+    border-color: var(--cor05);
+}
+
+.img-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.6s ease;
+}
+
+.card-corte:hover img {
+    transform: scale(1.15);
+}
+
+.card-info {
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.cabecalho h1{
-    margin-top: 22px;
-    font-size: 3rem;
-    font-size: bolder;
+.card-info h3 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
 }
 
-.cabecalho p{
-    font-size: 1.1rem;
-}
-
-.biografia{
-    color: var(--cor02);
-    margin: 50px 0 0 30px;
-}
-
-.biografia h2{
-    font-size: 2.3em;
-    font-weight: 400;
-    margin: 0 0 12px 10px;
-}
-
-.biografia p{
-    margin: 0 30px 0 20px;
-    font-size: 1.3rem;
-    text-align: justify;
-    line-height: 1.4;
-    text-indent: 20px;
-}
-
-.imagens{
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    justify-content: space-evenly;
-    gap: 50px;
-    padding: 20px;
-    margin-top: 80px;
-}
-
-.imagens div{
-    background-color: #e6e5e5;
-    height: 390px;
-    width: 320px;
-    overflow: hidden;
-    border-radius: 5px;
-    margin-top: 80px;
-}
-
-.imagens div img{
-    width: 100%;
-    height: 240px;
-    object-fit: cover;
-    background-position: center bottom;
-    border-radius: 5px;
-}
-
-.imagens h3{
-    font-size: 1.8em;
-    font-weight: 400;
-    padding: 25px 0 0 10px;
-}
-
-.imagens button{
-    font-size: 1.1rem;
-    font-weight: 400;
+.card-info button {
+    align-self: flex-end;
     background-color: var(--cor05);
-    color: var(--cor01);
+    color: #000;
     border: none;
-    border-radius: 10px;
-    margin: 20px 18px 0 0;
-    padding: 13px;
-    float: right;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-.imagens button:hover{
+.card-info button:hover {
+    background-color: #fff;
     box-shadow: 0 0 15px var(--cor05);
+    transform: scale(1.05);
 }
