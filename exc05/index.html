@@ -3,92 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barber Studio | Estilo e Autoestima</title>
+    <title>Aroma Café</title>
     <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/query.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <aside class="barra-lateral">
-        <h1>Barber <span>Studio</span></h1>
-        <ul class="lista-lateral">
-            <li><a href="cortes.html">Cortes Favoritos</a></li>
-            <li><a href="horario.html">Horários</a></li>
-            <li><a href="produto.html">Produtos</a></li>
-            <li><a href="cadastro.html">Cadastro do Salão</a></li>
-        </ul> 
-    </aside>
-
+    <header>
+        <h1>Mundo do Café</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="links">Início</a></li>
+                <li><a href="#" class="links">Cardápio</a></li>
+                <li><a href="#" class="links">Sobre</a></li>
+                <li><a href="#" class="links">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <header class="cabecalho">
-            <h1>Barber <span>Studio</span></h1>
-            <p>Transformando o seu estilo e autoestima.</p>
-        </header>
-
-        <section class="biografia">
-            <h2>Sobre Nós</h2>
-            <p>A Barber Studio nasceu com o objetivo de oferecer muito mais do que um simples corte de cabelo. Nosso salão combina estilo, conforto e atendimento de qualidade para proporcionar uma experiência moderna e acolhedora, sempre valorizando a personalidade e a autoestima de cada cliente.</p>
+        <section id="hero">
+            <article class="text">
+                <h2>O melhor café da sua cidade</h2>
+                <p>Descubra sabores incríveis, cafés especiais e um ambiente acolhedor para tornar seu dia ainda melhor.</p>
+                <button>Ver Cardápio</button> 
+            </article>
+            <article class="imagem">
+                <img src="imagens/principal.jpg" alt="Xícara de café especial sobre a mesa">
+            </article>
+        </section>
+        
+        <section class="opcoes">
+            <article>
+                <h2>Nossos Produtos</h2>
+                <p class="subtitulo">Os cafés mais pedidos da Aroma Café</p>
+                <div class="imagens">
+                    <div class="card-produto">
+                        <img src="imagens/expresso.jpg" alt="Espresso" class="foto-cafe">
+                        <h3>Espresso</h3>
+                        <p class="preco">R$ 8,00</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                    <div class="card-produto">
+                        <img src="imagens/cappucino.jpg" alt="cappuccino" class="foto-cafe"> 
+                        <h3>Cappuccino</h3>
+                        <p class="preco">R$ 14,00</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                    <div class="card-produto">
+                        <img src="imagens/latte.jpg" alt="Latte" class="foto-cafe">
+                        <h3>Latte</h3>
+                        <p class="preco">R$ 16,00</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                    <div class="card-produto">
+                        <img src="imagens/mocha.jpg" alt="Mocha" class="foto-cafe">
+                        <h3>Mocha</h3>
+                        <p class="preco">R$ 18,00</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                    <div class="card-produto">
+                        <img src="imagens/cafe-gelado.jpg" alt="Café gelado" class="foto-cafe">
+                        <h3>Café Gelado</h3>
+                        <p class="preco">R$ 20,00</p>
+                        <button class="btn-comprar">Comprar</button>
+                    </div>
+                </div>
+            </article>
         </section>
 
-        <section class="imagens">
-            <div class="card-corte">
-                <div class="img-container">
-                    <img src="imagens/degrade.png" alt="Corte Degradê">
-                </div>
-                <div class="card-info">
-                    <h3>Degradê</h3>
-                    <button>R$ 35,00</button>
-                </div>
+        <section id="sobre">
+            <div class="imagem-sobre">
+                <img src="imagens/loja.jpg" alt="Interior da cafeteria Mundo do Café">
             </div>
-
-            <div class="card-corte">
-                <div class="img-container">
-                    <img src="imagens/pompadour.png" alt="Corte Pompadour">
-                </div>
-                <div class="card-info">
-                    <h3>Pompadour</h3>
-                    <button>R$ 45,00</button>
-                </div>
-            </div>
-
-            <div class="card-corte">
-                <div class="img-container">
-                    <img src="imagens/social.png" alt="Corte Social">
-                </div>
-                <div class="card-info">
-                    <h3>Social</h3>
-                    <button>R$ 30,00</button>
-                </div>
-            </div>
-
-            <div class="card-corte">
-                <div class="img-container">
-                    <img src="imagens/midfade.png" alt="Corte Mid Fade">
-                </div>
-                <div class="card-info">
-                    <h3>Mid Fade</h3>
-                    <button>R$ 40,00</button>
-                </div>
-            </div>
-
-            <div class="card-corte">
-                <div class="img-container">
-                    <img src="imagens/mullet.png" alt="Corte Mullet">
-                </div>
-                <div class="card-info">
-                    <h3>Mullet</h3>
-                    <button>R$ 50,00</button>
-                </div>
-            </div>
-
-            <div class="card-corte">
-                <div class="img-container">
-                    <img src="imagens/lowfade.png" alt="Corte Low Fade">
-                </div>
-                <div class="card-info">
-                    <h3>Low Fade</h3>
-                    <button>R$ 38,00</button>
-                </div>
-            </div>
+            <article>
+                <h2>Sobre a Aroma Café</h2>
+                <p>A Aroma Café nasceu com o objetivo de proporcionar experiências únicas através de cafés especiais e um ambiente moderno e acolhedor.</p>
+                <p>Trabalhamos com ingredientes selecionados, atendimento de qualidade e muito carinho em cada detalhe.</p>
+            </article>
         </section>
     </main>
+    <footer>
+        <div id="container-rodape">
+            <div class=" caixa redes-socias">
+                <h3>Redes Sociais</h3>
+                <ul>
+                    <li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>WhatsApp</li>
+                </ul>
+            </div>
+            <div class="caixa endereco">
+                <h3>Endereço</h3>
+                <ul>
+                    <li>Rua do Café, 123</li>
+                    <li>Centro - Fortaleza/CE</li>
+                </ul>
+            </div>
+            <div class="caixa contato">
+                <h3>Email</h3>
+                <ul>
+                    <li>cafedomundo@gmail.com</li>
+                </ul>
+                <label for="email"></label>
+                <input type="email" name="email" id="email" placeholder="Coloque o seu comentário" required>
+                <button>Emoji do email</button>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
